@@ -1,5 +1,7 @@
 import org.junit.Test;
 
+import javax.sound.sampled.Line;
+
 import static org.junit.Assert.*;
 
 public class LinerSearchTest {
@@ -20,5 +22,18 @@ public class LinerSearchTest {
     public void search_should_support_string_array() {
         String[] data = {"12", "1234", "143"};
         assertEquals(LinerSearch.search(data, "1234"), 1);
+    }
+
+    @Test
+    public void test_complexity() {
+        Integer[] data = ArrayGenerator.generateOrderedIntegerArray(1000000);
+        long startTime = System.nanoTime();
+        for(int k = 0; k < 100; k++)
+            LinerSearch.search(data, 1000000);
+        long endTime = System.nanoTime();
+
+        double time = (endTime - startTime) / 1000000.0;
+
+        System.out.println(time + " ms");
     }
 }
