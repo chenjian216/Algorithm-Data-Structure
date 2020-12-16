@@ -1,7 +1,7 @@
 import utils.ArrayGenerator;
 
-public class SelectSort {
-    private SelectSort() {}
+public class SelectionSort {
+    private SelectionSort() {}
 
     public static Integer[] sortV1(Integer[] data) {
         if(data.length == 0) return data;
