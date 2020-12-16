@@ -1,6 +1,5 @@
 import org.junit.Test;
-
-import javax.sound.sampled.Line;
+import utils.ArrayGenerator;
 
 import static org.junit.Assert.*;
 
