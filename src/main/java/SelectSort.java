@@ -26,4 +26,19 @@ public class SelectSort {
         }
         return tempData;
     }
+
+    public static int[] sortV2(int[] data) {
+        for(int j = 0; j < data.length; j++) {
+            int minIndex = j;
+            for(int i = j; i < data.length; i++) {
+                if(data[i] < data[minIndex]) {
+                    minIndex = i;
+                }
+            }
+            int temp = data[j];
+            data[j] = data[minIndex];
+            data[minIndex] = temp;
+        }
+        return data;
+    }
 }
