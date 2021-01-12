@@ -27,7 +27,7 @@ public class SelectionSort {
         return tempData;
     }
 
-    public static int[] sortV2(int[] data) {
+    public static Integer[] sortV2(Integer[] data) {
         for(int j = 0; j < data.length; j++) {
             int minIndex = j;
             for(int i = j; i < data.length; i++) {
