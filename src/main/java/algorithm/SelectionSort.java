@@ -1,4 +1,4 @@
-import utils.ArrayGenerator;
+package algorithm;
 
 public class SelectionSort {
     private SelectionSort() {}

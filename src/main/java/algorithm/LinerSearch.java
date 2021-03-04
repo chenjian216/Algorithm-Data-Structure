@@ -1,3 +1,5 @@
+package algorithm;
+
 public class LinerSearch {
     private LinerSearch() {}
 

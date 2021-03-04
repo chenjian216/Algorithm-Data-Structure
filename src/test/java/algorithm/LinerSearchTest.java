@@ -1,5 +1,7 @@
+package algorithm;
+
 import org.junit.Test;
-import utils.ArrayGenerator;
+import algorithm.utils.ArrayGenerator;
 
 import static org.junit.Assert.*;
 
